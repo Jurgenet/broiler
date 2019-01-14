@@ -8,8 +8,13 @@
 </template>
 
 <style lang="scss">
+/* 
+ * Global styles
+ */
+@import url('./styles/_all.scss');
+
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  font-family: $font-main;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
@@ -21,7 +26,7 @@
     font-weight: bold;
     color: #2c3e50;
     &.router-link-exact-active {
-      color: #42b983;
+      color: $magenta;
     }
   }
 }
