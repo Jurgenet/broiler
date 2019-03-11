@@ -1,24 +1,20 @@
-# broiler
+# vue-broiler
 > vue boilerplate
 
-## Project setup
+## Available Scripts
 
-<details><summary>Scripts</summary>
-
-| `Yarn run <script>`  | Description                                        |
-| -------------------- | -------------------------------------------------- |
-| `yarn install`       | install                                            |
-| `yarn run serve`     | Compiles and hot-reloads for development           |
-| `yarn run build`     | Compiles and minifies for production               |
-| `yarn run test`      | Run your tests                                     |
-| `yarn run lint`      | Lints and fixes files                              |
-| `yarn run test:unit` | Run your unit tests                                |
-
-</details>
-
-## Customize configuration
-
-See [Configuration Reference](https://cli.vuejs.org/config/).
+```bash
+# install
+yarn
+# run dev mode
+yarn serve
+# lint
+yarn lint
+# test
+yarn test # test:unit
+# build
+yarn build
+```
 
 ## Details
 
@@ -55,18 +51,16 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 └── yarn.lock                     # yarn lock file
 ```
 
-<details><summary>Powered by</summary>
-
-* [vue2](https://vuejs.org)  
-* [webpack4](https://github.com/webpack/webpack)  
-* [babel6](https://babeljs.io)  
-* [pug](https://pugjs.org/api/getting-started.html)  
-* [scss](https://sass-scss.ru)  
-* [storybook](https://storybook.js.org/basics/guide-vue/)  
-* [firebase](https://firebase.google.com)  
-
 </details>
 
 ## License
 
-**MIT**
+*MIT*
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.

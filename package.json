@@ -1,7 +1,4 @@
 {
-  "name": "broiler",
-  "version": "0.1.0",
-  "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
@@ -9,6 +6,19 @@
     "storybook:build": "vue-cli-service storybook:build -c config/storybook",
     "storybook:serve": "vue-cli-service storybook:serve -p 6006 -c config/storybook",
     "test:unit": "vue-cli-service test:unit"
+  },
+  "gitHooks": {
+    "pre-commit": "lint-staged"
+  },
+  "lint-staged": {
+    "*.js": [
+      "vue-cli-service lint",
+      "git add"
+    ],
+    "*.vue": [
+      "vue-cli-service lint",
+      "git add"
+    ]
   },
   "dependencies": {
     "firebase": "^5.7.2",
@@ -61,7 +71,7 @@
   "browserslist": [
     "> 1%",
     "last 2 versions",
-    "not ie <= 8"
+    "not ie <= 10"
   ],
   "jest": {
     "moduleFileExtensions": [
@@ -86,17 +96,14 @@
     ],
     "testURL": "http://localhost/"
   },
-  "gitHooks": {
-    "pre-commit": "lint-staged"
+  "name": "vue-broiler",
+  "description": "vue boilerplate",
+  "version": "0.1.0",
+  "author": "Yuri Ivanchenko <tech.jurgenet@gmail.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jurgenet/vue-broiler.git"
   },
-  "lint-staged": {
-    "*.js": [
-      "vue-cli-service lint",
-      "git add"
-    ],
-    "*.vue": [
-      "vue-cli-service lint",
-      "git add"
-    ]
-  }
+  "private": true
 }
